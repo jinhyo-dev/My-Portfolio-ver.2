@@ -1,6 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@font-face {
+  font-family: 'LeferiPoint-WhiteObliqueA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
+
 body {
   color: #fff;
   background: #000;
+}
+
+.aboutMe {
+  background: linear-gradient(to right, #1739e3, #17dce3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projectStart {
+  background: linear-gradient(to right, #e31717, #17e362);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scrollZoom {
+  font-weight: bolder;
+  font-size: 70px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -14,9 +43,11 @@ body {
   position: relative;
 }
 
-h1 {
+.pageTitle {
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  font-size: 4em;
+  font-size: 5.5em;
   color: #fff;
   transform: translateY(-600px);
   animation: 1.2s slideIn ease-in-out forwards 0.2s;
@@ -45,4 +76,130 @@ h1 {
 .aboutme {
   color: #fff;
   height: 100vh;
+}
+
+.description {
+  font-weight: bold;
+  font-family: 'LeferiPoint-WhiteObliqueA', sans-serif;
+  text-align: center;
+  width: 40vw;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.hands {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.descriptionTitle {
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 3rem;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+  10% {
+    transform: rotate(14.0deg)
+  }
+  20% {
+    transform: rotate(-8.0deg)
+  }
+  30% {
+    transform: rotate(14.0deg)
+  }
+  40% {
+    transform: rotate(-4.0deg)
+  }
+  50% {
+    transform: rotate(10.0deg)
+  }
+  60% {
+    transform: rotate(0.0deg)
+  }
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+@media (max-width: 980px) {
+  .descriptionTitle {
+    font-size: 20px;
+  }
+}
+
+.information {
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border: 1px solid #fff;
+  height: 40vh;
+}
+
+.languages {
+  margin-top: 2rem;
+  border: 1px solid #fff;
+  height: 80%;
+  width: 50%;
+}
+
+.languagesTitle {
+  border-bottom: 1px solid #fff;
+}
+
+.languagesContainer img {
+  width: 20%;
+}
+
+.gallery {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 100%;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  margin-left: auto;
+  margin-right: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  color: #000;
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.desc h2 {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #5176f0;
+  font-size: 35px;
+}
+
+.scrollPhrases {
+  font-size: 30px;
+  margin-top: 4rem;
 }
