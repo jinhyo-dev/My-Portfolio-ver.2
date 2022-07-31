@@ -8,6 +8,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 body {
   color: #fff;
@@ -26,10 +28,15 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.contact {
+  background: linear-gradient(to right, #fffc28, #e17a0c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .scrollZoom {
-  font-weight: bolder;
   font-size: 70px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Prompt', sans-serif;
 }
 
 .container {
@@ -101,7 +108,7 @@ body {
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;
   text-align: center;
-  font-size: 3rem;
+  font-size: 48px;
 }
 
 @keyframes wave-animation {
@@ -131,37 +138,17 @@ body {
   }
 }
 
-@media (max-width: 980px) {
-  .descriptionTitle {
-    font-size: 20px;
-  }
-}
-
 .information {
   margin-top: 6rem;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  border: 1px solid #fff;
   height: 40vh;
 }
 
-.languages {
-  margin-top: 2rem;
-  border: 1px solid #fff;
-  height: 80%;
-  width: 50%;
-}
-
-.languagesTitle {
-  border-bottom: 1px solid #fff;
-}
-
-.languagesContainer img {
-  width: 20%;
-}
-
 .gallery {
+  min-width: 20rem;
+  max-width: 35rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
@@ -171,7 +158,13 @@ body {
 }
 
 .gallery:hover {
-  border: 1px solid #777;
+
+}
+
+.desc:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
 }
 
 .gallery img {
@@ -192,14 +185,140 @@ body {
   border-bottom-right-radius: 10px;
 }
 
-.desc h2 {
+.projectTitle {
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   color: #5176f0;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .scrollPhrases {
   font-size: 30px;
   margin-top: 4rem;
+}
+
+.languageBox {
+  width: 8vw;
+  float: left;
+}
+
+.i-container {
+  margin-top: 3.5vh;
+  margin-left: auto;
+  float: left;
+  height: 80%;
+  width: 49.5%;
+}
+
+.languageBox-container {
+  margin-top: 7vh;
+}
+
+.languageBox {
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+ul {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5vh;
+}
+
+.i-title {
+  font-size: 30px;
+}
+
+.first-languageBox {
+  margin-left: 1.3vw;
+}
+.description-phrases {
+  font-size: 18.5px;
+}
+
+.typewriter {
+  font-size: 85px;
+  margin-top: 50vh;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@media (max-width: 900px) {
+  .descriptionTitle {
+    font-size: 30px;
+  }
+  .scrollZoom {
+    font-size: 40px;
+  }
+  .pageTitle {
+    font-size: 45px;
+  }
+  .aboutMe {
+    font-size: 30px;
+  }
+  .projectTitle {
+    font-size: 22px;
+  }
+  .desc {
+    font-size: 13px;
+  }
+
+  .languageBox {
+    width: 23.5vw;
+    float: left;
+  }
+  .first-languageBox {
+    margin-left: 4.3vw;
+  }
+  .i-container {
+    margin-top: 3.5vh;
+    margin-left: auto;
+    height: 20vh;
+    width: 100%;
+  }
+
+  .languageBox-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+  }
+
+  .first-i-container {
+    margin-left: 0;
+  }
+
+  .languageBox {
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  ul {
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 3vh;
+  }
+
+  .i-title {
+    font-size: 20px;
+  }
+  .information {
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 60vh;
+  }
+  .first-i-container {
+    margin-left: 0;
+  }
+  .description-phrases {
+    font-size: 15px;
+  }
+  .typewriter {
+    font-size: 10vw;
+  }
 }
